@@ -1,8 +1,8 @@
 import reflex as rx
 
 from enum import Enum
-
 from .fonts import Fonts
+from chacalde_web.styles.colors import Color
 
 
 class Size(Enum):
@@ -27,7 +27,7 @@ STYLES_SHEETS = [
 # GLOBAL STYLES
 BASE_STYLE = {
     "font_family": Fonts.DEFAULT.value,
-    "background_color": "#5a78f2",
+    "background_color": Color.PRIMARY_BLUE.value,
     rx.Heading: {
         "font_family": Fonts.DEFAULT.value,
     }
@@ -70,7 +70,7 @@ links_navbar_styles = dict(
     text_align="center",
     #text_decoration="none",
     color="#fff",
-    background_color="#ff5252",
+    background_color=Color.SECONDARY_RED.value,
     border="3px solid #fff",
     border_radius="10px",
     box_shadow="5px 5px 0px #fff",
@@ -90,14 +90,14 @@ links_navbar_styles = dict(
 # HEADER
 
 header_heading_name = dict(
-    background_color="#ff5252",
+    background_color=Color.SECONDARY_RED.value,
     border_radius="15px",
     width="100%",
     padding=Size.DEFAULT.value
 )
 
 header_grid_span = dict(
-    background_color="#5a78f2",
+    background_color=Color.PRIMARY_BLUE.value,
     border_radius="17px",
     width="100%",
     padding_y=Size.MEDIUM.value,
@@ -112,7 +112,7 @@ header_grid_span = dict(
 )
 
 header_grid_networks = dict(
-    background_color="#6d6d6d",
+    background_color=Color.GREY.value,
     border_radius="17px",
     width="100%",
     padding_x=Size.DEFAULT.value,

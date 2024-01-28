@@ -4,6 +4,7 @@ import reflex as rx
 import chacalde_web.styles.styles as styles
 
 from chacalde_web.styles.styles import Size
+from chacalde_web.styles.colors import Color
 
 # Views
 from chacalde_web.views.navbar import navbar
@@ -14,7 +15,7 @@ def index() -> rx.Component:
         navbar(),
         rx.container(
             header(),
-            bg="#eeff0d",
+            bg=Color.TERTEARY_YELLOW.value,
             height="85vh",
             max_width="900px",
             margin_y=Size.LARGE.value,
