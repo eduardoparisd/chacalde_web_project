@@ -9,6 +9,7 @@ from chacalde_web.styles.colors import Color
 # Views
 from chacalde_web.views.navbar import navbar
 from chacalde_web.views.header import header
+from chacalde_web.views.body import body
 
 def index() -> rx.Component:
     return rx.fragment(
@@ -16,15 +17,17 @@ def index() -> rx.Component:
         rx.container(
             header(),
             bg=Color.TERTEARY_YELLOW.value,
-            height="85vh",
             max_width="900px",
-            margin_y=Size.LARGE.value,
+            margin_top=Size.BIG.value,
+            margin_bottom=Size.PLUS1.value,
             padding_x=Size.BIG.value,
             border_radius=Size.LARGE.value,
         ),
-        rx.container(
-            
-        )
+        rx.fragment(
+            body(),
+            margin_y="20px !important"
+        ),
+        
         
     )
 

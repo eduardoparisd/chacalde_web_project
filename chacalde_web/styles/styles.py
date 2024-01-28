@@ -30,6 +30,12 @@ BASE_STYLE = {
     "background_color": Color.PRIMARY_BLUE.value,
     rx.Heading: {
         "font_family": Fonts.DEFAULT.value,
+    },
+    rx.Image: {
+        "margin_x": Size.ZERO.value
+    },
+    rx.Span: {
+        "margin_x": Size.ZERO.value
     }
 
 }
@@ -75,7 +81,6 @@ links_navbar_styles = dict(
     border_radius="10px",
     box_shadow="5px 5px 0px #fff",
     transition="all 0.3 ease",
-    cursor="",
     height=Size.LARGE.value,
     _hover={
         "background_color": "#fff",
@@ -102,13 +107,7 @@ header_grid_span = dict(
     width="100%",
     padding_y=Size.MEDIUM.value,
     padding_x=Size.BIG.value,
-    box_shadow="0 0 25px rgb(0,140,255)",
-    backdrop_filter="blur(6px)",
-    transition="all 0.5s",
-    _hover={
-        "border": "1px solid black",
-        "transform": "scale(1.04)"
-    },
+    transition="all 0.5s"
 )
 
 header_grid_networks = dict(
@@ -118,4 +117,29 @@ header_grid_networks = dict(
     padding_x=Size.DEFAULT.value,
     padding_top=Size.LARGE.value
     
+)
+
+# BODY
+
+body_cards_style = dict(
+    background_color="#c2cdfb",
+    color="#232385",
+    overflow="hidden",
+    border_radius="20px",
+    h="14em",
+    margin_y=Size.BIGX2.value,
+    transition="all 0.5s",
+    cursor="",
+    _hover={
+        "box_shadow": "0 0 25px rgb(0,140,255)",
+        "backdrop_filter": "blur(6px)",
+        "transform": "scale(1.02)"
+    },
+)
+
+body_span_cards = dict(
+    display="block",
+    text_align="center",
+    padding_x=Size.BIGX2.value,
+    width="100%"
 )
