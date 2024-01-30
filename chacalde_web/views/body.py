@@ -4,8 +4,6 @@ import chacalde_web.styles.styles as styles
 from chacalde_web.styles.styles import Size
 from chacalde_web.styles.colors import Color
 
-from chacalde_web.components.link_cards import link_cards
-
 def body() -> rx.Component:
     return rx.vstack(
         rx.heading(

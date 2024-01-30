@@ -6,13 +6,14 @@ from chacalde_web.styles.styles import Size
 
 def navbar() -> rx.Component:
     return rx.hstack(
+            rx.spacer(),
             rx.link(
                 rx.image(
                     src="logo.PNG",
                     width=Size.BIGX2.value,
                     height=Size.BIGX2.value,
                     border_radius="5px",
-                    margin_right=Size.MEDIUM.value
+                    margin_right=f"{Size.MEDIUM.value} !important"
                 ),
                 "Chacalde",
                 cursor="",
@@ -24,6 +25,7 @@ def navbar() -> rx.Component:
                     "text_decoration": "none"
                 }
             ),
+            rx.spacer(),
             rx.link(
                 rx.button(
                 "Inicio",
@@ -38,10 +40,18 @@ def navbar() -> rx.Component:
                 ),
                 href="/"
             ),
+
             rx.link(
                 rx.button(
-                    "Alcaldía 2024",
-                    style=styles.links_navbar_styles
+                "Preguntas Frecuentes",
+                style=styles.links_navbar_styles
+                ),
+                href="/"
+            ),
+            rx.link(
+                rx.button(
+                "Galería",
+                style=styles.links_navbar_styles
                 ),
                 href="/"
             ),
@@ -52,5 +62,6 @@ def navbar() -> rx.Component:
                 ),
                 href="/"
             ),
+            rx.spacer(),
             style=styles.navbar_styles
         )

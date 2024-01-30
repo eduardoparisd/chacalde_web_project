@@ -36,6 +36,9 @@ BASE_STYLE = {
     },
     rx.Span: {
         "margin_x": Size.ZERO.value
+    },
+    rx.Text: {
+        "margin_bottom": Size.ZERO.value
     }
 
 }
@@ -123,6 +126,7 @@ header_grid_networks = dict(
 
 body_cards_style = dict(
     background_color="#c2cdfb",
+    #AGREGAR EL COLOR 232385 A COLORS.
     color="#232385",
     overflow="hidden",
     border_radius="20px",
@@ -142,4 +146,16 @@ body_span_cards = dict(
     text_align="center",
     padding_x=Size.BIGX2.value,
     width="100%"
+)
+
+# FAQ 
+accordion_item_style = dict(
+    padding_y=Size.MEDIUM.value,
+    padding_x=Size.LARGE.value
+)
+
+accordion_panel_style = dict(
+    text_align="justify",
+    margin_top=Size.SMALL.value,
+    font_size=Size.MEDIUM.value
 )

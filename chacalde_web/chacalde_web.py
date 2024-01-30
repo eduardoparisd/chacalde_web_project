@@ -10,6 +10,7 @@ from chacalde_web.styles.colors import Color
 from chacalde_web.views.navbar import navbar
 from chacalde_web.views.header import header
 from chacalde_web.views.body import body
+from chacalde_web.views.faq import faq
 
 def index() -> rx.Component:
     return rx.fragment(
@@ -28,6 +29,9 @@ def index() -> rx.Component:
             margin_y="20px !important"
         ),
         
+        rx.fragment(
+            faq()
+        )
         
     )
 
